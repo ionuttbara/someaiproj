@@ -1,0 +1,16 @@
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\bin\Debug\Arhitectura Retelei N.exe.config
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\bin\Debug\Arhitectura Retelei N.exe
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\bin\Debug\Arhitectura Retelei N.pdb
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura Retelei N.csprojAssemblyReference.cache
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.Form1.resources
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.Properties.Resources.resources
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura Retelei N.csproj.GenerateResource.cache
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura Retelei N.csproj.CoreCompileInputs.cache
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura Retelei N.exe
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura Retelei N.pdb
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.Form2.resources
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.Form3.resources
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.Form4.resources
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.UserControl1.resources
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.UserControl2.resources
+G:\VStudio work\Arhitectura Retelei N\Arhitectura Retelei N\obj\Debug\Arhitectura_Retelei_N.Form5.resources

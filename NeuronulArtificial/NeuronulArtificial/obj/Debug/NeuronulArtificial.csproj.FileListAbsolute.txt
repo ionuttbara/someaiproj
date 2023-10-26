@@ -1,0 +1,10 @@
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\bin\Debug\NeuronulArtificial.exe.config
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\bin\Debug\NeuronulArtificial.exe
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\bin\Debug\NeuronulArtificial.pdb
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\obj\Debug\NeuronulArtificial.csprojAssemblyReference.cache
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\obj\Debug\NeuronulArtificial.Form1.resources
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\obj\Debug\NeuronulArtificial.Properties.Resources.resources
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\obj\Debug\NeuronulArtificial.csproj.GenerateResource.cache
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\obj\Debug\NeuronulArtificial.csproj.CoreCompileInputs.cache
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\obj\Debug\NeuronulArtificial.exe
+G:\VStudio work\NeuronulArtificial\NeuronulArtificial\obj\Debug\NeuronulArtificial.pdb
