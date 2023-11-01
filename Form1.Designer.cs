@@ -28,20 +28,18 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
 			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
 			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.dataGridView2 = new System.Windows.Forms.DataGridView();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.label17 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
@@ -55,7 +53,6 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.label6 = new System.Windows.Forms.Label();
 			this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -84,7 +81,8 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.button3 = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
-			this.label17 = new System.Windows.Forms.Label();
+			this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+			this.tbArrray = new System.Windows.Forms.TextBox();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -96,7 +94,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
 			this.tabPage4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -162,13 +159,14 @@
 			// 
 			// tabPage3
 			// 
+			this.tabPage3.Controls.Add(this.tbArrray);
+			this.tabPage3.Controls.Add(this.zedGraphControl1);
 			this.tabPage3.Controls.Add(this.label17);
 			this.tabPage3.Controls.Add(this.textBox1);
 			this.tabPage3.Controls.Add(this.button2);
 			this.tabPage3.Controls.Add(this.button1);
 			this.tabPage3.Controls.Add(this.panel1);
 			this.tabPage3.Controls.Add(this.groupBox1);
-			this.tabPage3.Controls.Add(this.chart1);
 			this.tabPage3.Font = new System.Drawing.Font("Mojangles", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tabPage3.Location = new System.Drawing.Point(4, 31);
 			this.tabPage3.Name = "tabPage3";
@@ -176,6 +174,15 @@
 			this.tabPage3.TabIndex = 2;
 			this.tabPage3.Text = "Antrenare";
 			this.tabPage3.UseVisualStyleBackColor = true;
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Location = new System.Drawing.Point(376, 607);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(136, 19);
+			this.label17.TabIndex = 6;
+			this.label17.Text = "Ultimul Rezultat";
 			// 
 			// textBox1
 			// 
@@ -233,19 +240,24 @@
 			// numericUpDown4
 			// 
 			this.numericUpDown4.Location = new System.Drawing.Point(238, 111);
-			this.numericUpDown4.Name = "numericUpDown4";
-			this.numericUpDown4.Size = new System.Drawing.Size(120, 26);
-			this.numericUpDown4.TabIndex = 7;
-			this.numericUpDown4.Value = new decimal(new int[] {
-            1,
+			this.numericUpDown4.Maximum = new decimal(new int[] {
+            1000,
             0,
             0,
             0});
+			this.numericUpDown4.Name = "numericUpDown4";
+			this.numericUpDown4.Size = new System.Drawing.Size(120, 26);
+			this.numericUpDown4.TabIndex = 7;
 			this.numericUpDown4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
 			// 
 			// numericUpDown3
 			// 
-			this.numericUpDown3.Location = new System.Drawing.Point(238, 83);
+			this.numericUpDown3.Location = new System.Drawing.Point(238, 88);
+			this.numericUpDown3.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
 			this.numericUpDown3.Name = "numericUpDown3";
 			this.numericUpDown3.Size = new System.Drawing.Size(120, 26);
 			this.numericUpDown3.TabIndex = 6;
@@ -327,27 +339,6 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Pași de învățare";
 			// 
-			// chart1
-			// 
-			chartArea1.Name = "ChartArea1";
-			this.chart1.ChartAreas.Add(chartArea1);
-			legend1.Name = "Legend1";
-			this.chart1.Legends.Add(legend1);
-			this.chart1.Location = new System.Drawing.Point(11, 13);
-			this.chart1.Name = "chart1";
-			this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-			series1.ChartArea = "ChartArea1";
-			series1.Legend = "Legend1";
-			series1.Name = "Eroare Epoca";
-			series2.ChartArea = "ChartArea1";
-			series2.Legend = "Legend1";
-			series2.Name = "Eroare Admisa";
-			this.chart1.Series.Add(series1);
-			this.chart1.Series.Add(series2);
-			this.chart1.Size = new System.Drawing.Size(1201, 544);
-			this.chart1.TabIndex = 0;
-			this.chart1.Text = "chart1";
-			// 
 			// tabPage4
 			// 
 			this.tabPage4.Controls.Add(this.label6);
@@ -372,20 +363,20 @@
 			// 
 			// chart2
 			// 
-			chartArea2.Name = "ChartArea1";
-			this.chart2.ChartAreas.Add(chartArea2);
-			legend2.Name = "Legend1";
-			this.chart2.Legends.Add(legend2);
+			chartArea1.Name = "ChartArea1";
+			this.chart2.ChartAreas.Add(chartArea1);
+			legend1.Name = "Legend1";
+			this.chart2.Legends.Add(legend1);
 			this.chart2.Location = new System.Drawing.Point(6, 3);
 			this.chart2.Name = "chart2";
-			series3.ChartArea = "ChartArea1";
-			series3.Legend = "Legend1";
-			series3.Name = "Valoare Initiala";
-			series4.ChartArea = "ChartArea1";
-			series4.Legend = "Legend1";
-			series4.Name = "Valoare Calculata";
-			this.chart2.Series.Add(series3);
-			this.chart2.Series.Add(series4);
+			series1.ChartArea = "ChartArea1";
+			series1.Legend = "Legend1";
+			series1.Name = "Valoare Initiala";
+			series2.ChartArea = "ChartArea1";
+			series2.Legend = "Legend1";
+			series2.Name = "Valoare Calculata";
+			this.chart2.Series.Add(series1);
+			this.chart2.Series.Add(series2);
 			this.chart2.Size = new System.Drawing.Size(1207, 344);
 			this.chart2.TabIndex = 2;
 			this.chart2.Text = "chart2";
@@ -608,6 +599,7 @@
 			this.button3.TabIndex = 4;
 			this.button3.Text = "START";
 			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// label5
 			// 
@@ -618,14 +610,30 @@
 			this.label5.TabIndex = 0;
 			this.label5.Text = "fixed acidity";
 			// 
-			// label17
+			// zedGraphControl1
 			// 
-			this.label17.AutoSize = true;
-			this.label17.Location = new System.Drawing.Point(376, 607);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(136, 19);
-			this.label17.TabIndex = 6;
-			this.label17.Text = "Ultimul Rezultat";
+			this.zedGraphControl1.Location = new System.Drawing.Point(11, 4);
+			this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.zedGraphControl1.Name = "zedGraphControl1";
+			this.zedGraphControl1.ScrollGrace = 0D;
+			this.zedGraphControl1.ScrollMaxX = 0D;
+			this.zedGraphControl1.ScrollMaxY = 0D;
+			this.zedGraphControl1.ScrollMaxY2 = 0D;
+			this.zedGraphControl1.ScrollMinX = 0D;
+			this.zedGraphControl1.ScrollMinY = 0D;
+			this.zedGraphControl1.ScrollMinY2 = 0D;
+			this.zedGraphControl1.Size = new System.Drawing.Size(777, 541);
+			this.zedGraphControl1.TabIndex = 7;
+			this.zedGraphControl1.UseExtendedPrintDialog = true;
+			// 
+			// tbArrray
+			// 
+			this.tbArrray.Location = new System.Drawing.Point(817, 4);
+			this.tbArrray.Multiline = true;
+			this.tbArrray.Name = "tbArrray";
+			this.tbArrray.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+			this.tbArrray.Size = new System.Drawing.Size(395, 541);
+			this.tbArrray.TabIndex = 8;
 			// 
 			// Form1
 			// 
@@ -653,7 +661,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
 			this.tabPage4.ResumeLayout(false);
 			this.tabPage4.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
@@ -674,7 +681,6 @@
 		private System.Windows.Forms.TabPage tabPage3;
 		private System.Windows.Forms.TabPage tabPage4;
 		private System.Windows.Forms.TabPage tabPage5;
-		private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.NumericUpDown numericUpDown4;
@@ -715,6 +721,8 @@
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label17;
+		private ZedGraph.ZedGraphControl zedGraphControl1;
+		private System.Windows.Forms.TextBox tbArrray;
 	}
 }
 
